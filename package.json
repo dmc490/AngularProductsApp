@@ -1,0 +1,23 @@
+{
+  "name": "angular-products-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodeApp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmc490/AngularProductsApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmc490/AngularProductsApp/issues"
+  },
+  "homepage": "https://github.com/dmc490/AngularProductsApp#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  }
+}
