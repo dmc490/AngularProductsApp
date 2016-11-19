@@ -8,24 +8,19 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-
-
-  <div ng-app="myApp">
-    <div ng-controller="Ctrl">
-      {{items}}
-      <div ng-repeat="item in items">
-        <dyn-amic typeitem="item"></dyn-amic>
-      </div>
+  <div ng-app="app">
+    <div ng-controller="productsCtrl">
+      <product-item product="product" ng-repeat="product in products | orderBy:'name' track by $index"></product-item>
     </div>
   </div>
 
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.5.8/angular-resource.min.js"></script>
   <script
           src="https://code.jquery.com/jquery-3.1.1.min.js"
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <script src="client.min.js"></script>
 
 </body>
 </html>
